@@ -117,11 +117,7 @@
           margin-left: 1em;
           margin-right: 1em;
         }
-        .unit {
-              position: absolute;
-              top: 0;
-              right: 0;
-        }
+      
         .unitRight {
           float: right;
         }
@@ -297,6 +293,31 @@
      display: flex;
      flex-wrap: wrap;
     }
+
+
+.glyph  {
+  text-align: center;
+
+}
+
+.size1of1 {
+    width: 93%;
+    margin-top: 20px;
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+    opacity: 0;
+}
+
+.glyph:hover .size1of1{
+
+    -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+    -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
     @media (max-width: 767px) {
       .ptl {
         margin-left: 0;
@@ -310,6 +331,23 @@
       }
     
     }
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
     </style>
 <body>
 
