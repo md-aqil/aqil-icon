@@ -177,7 +177,7 @@
         .aside {
           width: 80px;
           height: 100vh;
-          background: #303952;
+          background: #33051c;
           float: left;
           position: fixed;
           left: 0;
@@ -224,7 +224,7 @@
      
          padding-bottom: 45px;
          background: #141e30;
-      background: linear-gradient(90deg,#9d0029 0,#930026 60%,#600019);
+      background: linear-gradient(90deg,#501431 0,#491a3c 60%,#511430);
          position: relative;
          overflow: hidden;
      }
@@ -382,3 +382,7 @@ header nav.navbar ul li a{
  background: #ff538094;
      color: #000;
 }
+
+/*menu style=================================*/
+
+
