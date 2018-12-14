@@ -4,21 +4,10 @@
           font-family: sans-serif;
           font-size: 1em;
           line-height: 1.5;
-          color: #555;
+          color: #000;
           background: #f7f7f7;
         }
-       .title {
-           margin-bottom: 0;
-           /* margin-left: 50px; */
-           border-bottom: 1px solid #bbb;
-           display: block;
-           width: 100%;
-           padding-left: 50px;
-       }
-
-        .title h1 {
-          margin-bottom: 0;
-        }
+     
         .front-banner-box {
           width: 50%;
           margin: 0 auto;
@@ -60,10 +49,7 @@
           transition: all .1s;
          
         }
-        body {
-          overflow-x: hidden;
-        }
-
+    
         .glyph:hover [class^="aqil-icon-"] {
           transform: scale(1.5);
         }
@@ -177,7 +163,7 @@
         .aside {
           width: 80px;
           height: 100vh;
-          background: #303952;
+          background: #62001a;
           float: left;
           position: fixed;
           left: 0;
@@ -203,7 +189,7 @@
             padding: 22px 0;
             text-align: center;
             font-size: 11px;
-            border-bottom: 1px solid#212738;
+            border-bottom: 1px solid #560017;
         }
         .aside li:last-child a {
           border:none;
@@ -226,26 +212,9 @@
          background: #141e30;
       background: linear-gradient(90deg,#9d0029 0,#930026 60%,#600019);
          position: relative;
-         overflow: hidden;
+         
      }
-     .cursor {
-      animation: cursor-anim 8s forwards infinite;
-     }
-    @keyframes cursor-anim {
-
-        from { transform: translate(0px, 0px);}
-      50% {    transform: translate(20px, 43px);}
-      80% {transform: translate(150px, 63px);}
-
-        to {transform: translate(-110px, 0px); }
-      
-    }
-
-    .linepath {
-    transform-origin: center center;
-      animation: dashs 5s linear  infinite;
-    }  
- 
+     
     .glyph {
       padding-top: 20px;
           transition: opacity .45s cubic-bezier(0.25, 1, 0.33, 1), transform .45s cubic-bezier(0.25, 1, 0.33, 1), border-color .45s cubic-bezier(0.25, 1, 0.33, 1), color .45s cubic-bezier(0.25, 1, 0.33, 1), background-color .45s cubic-bezier(0.25, 1, 0.33, 1), box-shadow .45s cubic-bezier(0.25, 1, 0.33, 1);
@@ -305,25 +274,18 @@
 .logo-box .logo {
   width: 120px;
 }
-.logo-box .bee {
-  width: 60px;
-      margin-bottom: -20px;
-      margin-left: -30px;
-}
 
 .app {
   overflow-y: scroll;
     max-height: 100vh;
     overflow-x: hidden;
 }
-body {
-  overflow: hidden;
-}
+
 header nav.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-        padding: 0 30px;
+        padding: 8px 30px;
 }
 header nav.navbar ul {
   display: flex;
@@ -381,4 +343,24 @@ header nav.navbar ul li a{
 .highlight.active {
  background: #ff538094;
      color: #000;
+}
+
+#finder {
+  visibility: hidden;
+}
+
+#finder.active {
+ visibility: visible;
+}
+
+.logo-box {
+  position: relative;
+}
+
+.logo-box .bee {
+    width: 50px;
+   
+    position: absolute;
+    top: -31px;
+    left: -14px;
 }
