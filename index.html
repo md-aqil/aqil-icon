@@ -110,6 +110,7 @@
 
           <div class="panel-header panel-header-sm">
             <header>
+
             <nav class="navbar">
               <ul>
                 <li class="logo-box">
@@ -129,23 +130,24 @@
                   <a href="#" class="finder-activator" data-finder-activator>
                      Search
 
-                  </a>
-                </li>
-              </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-            </nav>
+                </nav>
           </header>
 
               <div class="top-centerbox">
-                  <h1 class="text-center">Bee-icon</h1>
+                  <!-- <h1 class="text-center">Bee-icon</h1> -->
                   <div class="front-banner-box">
 
-                    <div class="how-to-use">
+               <!--      <div class="how-to-use">
                       <div>
                         <span style="color:#f00">&lt;i</span> <span><span style="color:#9eff00">class</span><span>=</span>"<span style="color:#dbb500">bee-icon-search</span>"</span><span> &gt;</span>
                         <span style="color:#f00">&lt;/i&gt;</span>
                       </div>
-                    </div>
+                    </div> -->
+                    <img width="450" src="vendor/main-banner.svg" alt="">
 
                   </div>
               </div>
@@ -253,5 +255,17 @@
              return false;
          });
      </script>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
+
 </body>
 </html>
