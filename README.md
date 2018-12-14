@@ -1,4 +1,4 @@
-# aqil-icon
+# bee-icon
 very lightweight icon-font
 easy to use
 
