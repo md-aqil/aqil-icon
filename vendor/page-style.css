@@ -6,9 +6,11 @@
           line-height: 1.5;
           color: #000;
           background: #f7f7f7;
-          overflow: hidden;
+        
         }
-     
+     [class^="bee-icon-"], [class*=" bee-icon-"] {
+      font-size: 40px;
+     }
         .front-banner-box {
           width: 50%;
           margin: 0 auto;
@@ -39,7 +41,7 @@
          position: relative;
          flex-grow: 1;
          border-radius: 4px;
-         width: 150px
+         width: 90px
 
         }
         .glyph:hover fieldset {
@@ -147,16 +149,22 @@
         }
        
         .ptl {
-           padding-top: 1.5em;
+           
                display: flex;
                flex-wrap: wrap;
-               box-shadow: 0 1px 15px 1px rgba(39,39,39,.1);
+               
+             
+               
+        }
+        .man-wrapper {
+          position: relative;
+               border-radius: 3px;
+                 background: #fff;
+                 box-shadow: 0 1px 15px 1px rgba(39,39,39,.1);
                margin-left: 30px;
                margin-right: 30px;
                margin-top: -66px;
-               background: #fff;
-               position: relative;
-               border-radius: 3px;
+               padding-top: 1.5em;
         }
 
         [class^="aqil-icon-"], [class*=" aqil-icon-"] {
@@ -195,11 +203,17 @@
             font-size: 11px;
             border-bottom: 1px solid #310020;
         }
+        .aside li a i{
+          display: block;
+          font-size: 25px;
+        }
         .aside li:last-child a {
           border:none;
         }
         .aside li a span {
           font-size: 28px;
+              display: block;
+              margin-bottom: 3px;
 
         }
         .aside li a:hover {
@@ -279,11 +293,6 @@
   width: 120px;
 }
 
-.app {
-  overflow-y: scroll;
-    max-height: 100vh;
-    overflow-x: hidden;
-}
 
 header nav.navbar {
     display: flex;
@@ -378,12 +387,15 @@ header nav.navbar ul li a{
       left: 0;
       right: 0;
       width: 50%;
+      height: 80vh;
       margin: auto;
-      top: 100px;
+      top: 60px;
       padding: 20px;
       display: none;
       font-size: 20px;
       box-shadow: 0px 9px 100px #00000061;
+      z-index: 10;
+      overflow-y: auto;
 }
 
 .how-to-use-modal .close-btn {
@@ -394,12 +406,126 @@ header nav.navbar ul li a{
 }
 
 .title {
- width: 100%;
-     font-size: 25px;
-     background: #4b173812;
-     margin-left: 25px;
-     border-left: 3px solid;
-     padding: 10px;
-     margin-top: 0;
-     font-weight: bold;
+  width: 100%;
+      font-size: 25px;
+      background: rgba(0, 0, 0, 0.03);
+      border-left: 3px solid;
+      padding: 10px;
+      margin-top: 0;
+      font-weight: bold;
+      padding-left: 20px;
+      color: #790042;
+      cursor: pointer;
+      position: relative;
+}
+.title:after {
+  content: "\e9ce";
+      font-family: 'bee-icon' !important;
+      position: absolute;
+      right: 20px;
+      transition: all .5s;
+      top: 10px;
+
+}
+
+pre {
+  background: #46153217;
+    border-left: 4px solid #40022a;
+    padding: 15px 0px;
+}
+
+.main-overlay {
+  width: 100%;
+    height: 100%;
+    background: #00000045;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+
+
+.finder-input.not-found {
+  color: #e7353f;
+}
+
+.btn-finder {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+.finder-input,
+.btn-finder:not(:last-child) {
+  margin-right: 5px;
+}
+
+.finder-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #888;
+  border-right: 1px solid #e5e5e5;
+  margin-right: 5px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.btn-finder,
+.finder-count {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+section article {
+  width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+
+.title.active:after{
+    transform: rotate(-90deg);
+
+}
+
+.title .lead {
+  font-size: 16px;
+      font-weight: 400;
+      color: #888;
+      margin-top: 0;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bg_color [class*="bee-icon-"] {
+ background: -webkit-linear-gradient(#fff, #ffffff94);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-shadow: none;
+}
+
+article .title {
+  border:none;
+  background: none;
+ 
+}
+article .title:after {
+  content: none;
+}
+article .title h1 {
+  font-size: 20px;
+      color: #3c3c3c;
+}
+
+.bg_color.square {
+  border-radius: 4px;
 }

@@ -2,7 +2,7 @@
 very lightweight icon-font
 easy to use
 
-Check Out <a href="https://md-aqil.github.io/aqil-icon/">Demo</a>
+Check Out <a href="https://md-aqil.github.io/bee-icon/">Demo</a>
 
 
 #   How to use it:
